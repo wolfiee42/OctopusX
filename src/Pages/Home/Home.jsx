@@ -1,9 +1,10 @@
+import CeoMsg from "../../components/CeoMsg"
 
 
 const Home = () => {
   return (
     <div>
-      This is home
+      <CeoMsg/>
     </div>
   )
 }
