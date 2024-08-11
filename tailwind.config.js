@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
         'inter': ['Inter', 'sans-serif'],
+        'roboto': ['Roboto', 'sans-serif'],
     },
     colors:{
       'primary': '#FF0000',

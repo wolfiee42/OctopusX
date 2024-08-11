@@ -1,6 +1,7 @@
 import React from 'react'
 import WhoWeAre from '../../components/WhoWeAre'
 import OurFlagshipProject from '../../components/OurFlagshipProject'
+import OurPlans from '../../components/OurPlans'
 
 const Home = () => {
   return (
@@ -8,7 +9,7 @@ const Home = () => {
     {/* Components Done by Amdadul */}
      <WhoWeAre/> 
      <OurFlagshipProject/>
-     
+     <OurPlans/>
       {/* Amdadul Components End here */}
     </>
   )
