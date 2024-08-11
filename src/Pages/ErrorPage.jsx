@@ -1,6 +1,6 @@
 
 
-const ErrrorPage = () => {
+const ErrorPage = () => {
   return (
     <div>
       error page
@@ -8,4 +8,4 @@ const ErrrorPage = () => {
   )
 }
 
-export default ErrrorPage
+export default ErrorPage
