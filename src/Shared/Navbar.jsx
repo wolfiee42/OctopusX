@@ -16,12 +16,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full h-full">
+    <nav className="w-full h-28 fixed top-0 z-50 bg-white shadow-md">
       <div className="max-w-7xl h-full mx-auto">
-        <div className="w-full h-full flex justify-between items-center px-4 sm:px-6 lg:px-8">
+        <div className="w-full h-full mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-4">
           {/* Logo */}
-          <NavLink to="/" className="">
-            <img src={logo} alt="Logo" className="w-48 mr-2" />
+          <NavLink to="/" className="flex items-center">
+            <img src={logo} alt="Logo" className="w-48" />
           </NavLink>
           {/* Nav Links for lg screens */}
           <div className="hidden md:flex items-center space-x-14">
@@ -78,11 +78,8 @@ const Navbar = () => {
           </div>
 
           {/* Mobile/Tablet Menu Button */}
-          <div className="md:hidden flex items-center">
-            <button
-              className="outline-none mobile-menu-button"
-              onClick={toggleMenu}
-            >
+          <div className="md:hidden">
+            <button onClick={toggleMenu}>
               {menuOpen ? (
                 <MdOutlineCancel className="text-3xl" />
               ) : (
@@ -92,10 +89,13 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
-      {/* Mobile/Tablet Menu */}
-      <div className={`md:hidden ${menuOpen ? "" : "hidden"}`}>
-        <ul className="absolute right-0 w-full bg-white flex flex-col items-end p-4 gap-5">
+      {/* Mobile Menu */}
+      <div
+        className={`md:hidden bg-white absolute top-0 left-0 w-full transition-transform duration-300 ease-in-out ${
+          menuOpen ? "translate-y-28" : "-translate-y-full"
+        }`}
+      >
+        <ul className="flex flex-col items-end p-4 gap-5 bg-white shadow-md">
           <li>
             <NavLink
               to="/"
