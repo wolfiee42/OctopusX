@@ -16,9 +16,11 @@ const WhoWeAre = () => {
      </div>
      <div></div>
      <div></div>
-     <div className="lg:w-[750px] lg:h-[425px] lg:relative mt-6">
-     <img className='w-full h-[230px] flex lg:hidden md:h-[400px]' src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwzfHxzdGFydHVwfGVufDB8fHx8MTcwNjcxNDY3NHww&ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=848" alt="" />
-        <img className="w-full h-full lg:absolute -top-20" src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHxzdGFydHVwJTJDJTIwc2VydmljZXN8ZW58MHx8fHwxNzA2Njc5MTIzfDA&ixlib=rb-4.0.3&auto=format&fit=crop&w=984&h=557" />
+     <div className="lg:w-[750px] lg:h-[425px] md:flex md:flex-col  lg:relative mt-6">
+    <div className=''>
+     <img className='w-full h-[200px] md:h-[450px] object-cover lg:hidden' src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwzfHxzdGFydHVwfGVufDB8fHx8MTcwNjcxNDY3NHww&ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=848" alt="" />
+    </div>
+    <img className="w-full h-full lg:absolute -top-20" src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHxzdGFydHVwJTJDJTIwc2VydmljZXN8ZW58MHx8fHwxNzA2Njc5MTIzfDA&ixlib=rb-4.0.3&auto=format&fit=crop&w=984&h=557" />
      </div>
      </div>
     </section>
