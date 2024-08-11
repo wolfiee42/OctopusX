@@ -1,5 +1,8 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/octopuslogo.svg";
+import { IoMdMenu } from "react-icons/io";
+import { MdOutlineCancel } from "react-icons/md";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,118 +11,155 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <nav className="w-full h-full">
       <div className="max-w-7xl h-full mx-auto">
         <div className="w-full h-full flex justify-between items-center px-4 sm:px-6 lg:px-8">
           {/* Logo */}
-          <a href="#" className="">
+          <NavLink to="/" className="">
             <img src={logo} alt="Logo" className="w-48 mr-2" />
-          </a>
-          {/* Primary Nav for lg screens */}
+          </NavLink>
+          {/* Nav Links for lg screens */}
           <div className="hidden md:flex items-center space-x-14">
-            <a
-              href="#"
-              className="py-1 font-semibold text-gray-700 hover:border-b-[1px] hover:border-b-gray-700"
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive
+                  ? "py-1 font-semibold text-gray-700 border-b-[1px] border-b-gray-700"
+                  : "py-1 font-semibold text-gray-700 hover:border-b-[1px] hover:border-b-gray-700"
+              }
             >
               Home
-            </a>
-            <a
-              href="#"
-              className="py-1 font-semibold text-gray-700 hover:border-b-[1px] hover:border-b-gray-700"
+            </NavLink>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive
+                  ? "py-1 font-semibold text-gray-700 border-b-[1px] border-b-gray-700"
+                  : "py-1 font-semibold text-gray-700 hover:border-b-[1px] hover:border-b-gray-700"
+              }
             >
               About
-            </a>
-            <a
-              href="#"
-              className="py-1 font-semibold text-gray-700 hover:border-b-[1px] hover:border-b-gray-700"
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive
+                  ? "py-1 font-semibold text-gray-700 border-b-[1px] border-b-gray-700"
+                  : "py-1 font-semibold text-gray-700 hover:border-b-[1px] hover:border-b-gray-700"
+              }
             >
               Contact
-            </a>
-            <a
-              href="#"
-              className="py-1 font-semibold text-gray-700 hover:border-b-[1px] hover:border-b-gray-700"
+            </NavLink>
+            <NavLink
+              to="/projects"
+              className={({ isActive }) =>
+                isActive
+                  ? "py-1 font-semibold text-gray-700 border-b-[1px] border-b-gray-700"
+                  : "py-1 font-semibold text-gray-700 hover:border-b-[1px] hover:border-b-gray-700"
+              }
             >
               Projects
-            </a>
-            <a
-              href="#"
-              className="py-1 font-semibold text-gray-700 hover:border-b-[1px] hover:border-b-gray-700"
+            </NavLink>
+            <NavLink
+              to="/career"
+              className={({ isActive }) =>
+                isActive
+                  ? "py-1 font-semibold text-gray-700 border-b-[1px] border-b-gray-700"
+                  : "py-1 font-semibold text-gray-700 hover:border-b-[1px] hover:border-b-gray-700"
+              }
             >
               Career
-            </a>
+            </NavLink>
           </div>
 
-          {/* Mobile/ Tablet Menu Button */}
+          {/* Mobile/Tablet Menu Button */}
           <div className="md:hidden flex items-center">
             <button
               className="outline-none mobile-menu-button"
               onClick={toggleMenu}
             >
               {menuOpen ? (
-                <svg
-                  className="w-6 h-6 text-gray-500 hover:text-gray-900"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
+                <MdOutlineCancel className="text-3xl" />
               ) : (
-                <svg
-                  className="w-6 h-6 text-gray-500 hover:text-gray-900"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
+                <IoMdMenu className="text-3xl" />
               )}
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile / Tablet Menu */}
+      {/* Mobile/Tablet Menu */}
       <div className={`md:hidden ${menuOpen ? "" : "hidden"}`}>
-        <ul>
+        <ul className="absolute right-0 w-full bg-white flex flex-col items-end p-4 gap-5">
           <li>
-            <a
-              href="#"
-              className="block text-sm px-2 py-4 text-gray-500 hover:bg-gray-200 transition duration-300"
+            <NavLink
+              to="/"
+              onClick={closeMenu}
+              className={({ isActive }) =>
+                isActive
+                  ? "py-1 font-semibold text-gray-700 border-b-[1px] border-b-gray-700 transition duration-300"
+                  : "py-1 font-semibold text-gray-700 hover:border-b-[1px] hover:border-b-gray-700 transition duration-300"
+              }
             >
               Home
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a
-              href="#"
-              className="block text-sm px-2 py-4 text-gray-500 hover:bg-gray-200 transition duration-300"
+            <NavLink
+              to="/about"
+              onClick={closeMenu}
+              className={({ isActive }) =>
+                isActive
+                  ? "py-1 font-semibold text-gray-700 border-b-[1px] border-b-gray-700 transition duration-300"
+                  : "py-1 font-semibold text-gray-700 hover:border-b-[1px] hover:border-b-gray-700 transition duration-300"
+              }
             >
               About
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a
-              href="#"
-              className="block text-sm px-2 py-4 text-gray-500 hover:bg-gray-200 transition duration-300"
+            <NavLink
+              to="/projects"
+              onClick={closeMenu}
+              className={({ isActive }) =>
+                isActive
+                  ? "py-1 font-semibold text-gray-700 border-b-[1px] border-b-gray-700 transition duration-300"
+                  : "py-1 font-semibold text-gray-700 hover:border-b-[1px] hover:border-b-gray-700 transition duration-300"
+              }
             >
-              Services
-            </a>
+              Projects
+            </NavLink>
           </li>
           <li>
-            <a
-              href="#"
-              className="block text-sm px-2 py-4 text-gray-500 hover:bg-gray-200 transition duration-300"
+            <NavLink
+              to="/contact"
+              onClick={closeMenu}
+              className={({ isActive }) =>
+                isActive
+                  ? "py-1 font-semibold text-gray-700 border-b-[1px] border-b-gray-700 transition duration-300"
+                  : "py-1 font-semibold text-gray-700 hover:border-b-[1px] hover:border-b-gray-700 transition duration-300"
+              }
             >
               Contact
-            </a>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/career"
+              onClick={closeMenu}
+              className={({ isActive }) =>
+                isActive
+                  ? "py-1 font-semibold text-gray-700 border-b-[1px] border-b-gray-700 transition duration-300"
+                  : "py-1 font-semibold text-gray-700 hover:border-b-[1px] hover:border-b-gray-700 transition duration-300"
+              }
+            >
+              Career
+            </NavLink>
           </li>
         </ul>
       </div>
