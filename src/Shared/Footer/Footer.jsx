@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
           <div>
             <h1 className="font-bold text-lg pb-2">Social</h1>
-            <div className="flex gap-1 py-2">
+            <div className="flex gap-2 py-2">
               <a href="https://x.com/OctopusXinc"><FaXTwitter className="hover:text-black text-2xl" /></a>
               <a href="https://x.com/OctopusXinc"><FaYoutube className="hover:text-black text-2xl" /></a>
               <a href="https://x.com/OctopusXinc"><FaLinkedinIn className="hover:text-black text-2xl" /></a>
