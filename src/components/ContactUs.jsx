@@ -4,9 +4,9 @@ import { FaXTwitter } from "react-icons/fa6"
 
 const ContactUs = () => {
   return (
-    <div className="max-w-screen-xl mx-auto flex gap-5 my-10">
+    <div className="lg:max-w-screen-xl px-5 lg:px-10  md:max-w-screen-md sm:max-w-screen-sm  mx-auto flex flex-col md:flex-row  gap-5 my-10">
       {/* left side */}
-      <div className="w-1/2 py-4">
+      <div className="md:w-1/2 py-4">
         <h1 className="text-5xl font-bold pb-10">Contact Us</h1>
         <p>Have questions or need support? Get <br /> in touch with our team.</p>
         <p className="pt-5">x@octopusx.com</p>
@@ -16,7 +16,7 @@ const ContactUs = () => {
         </div>
       </div>
       {/* right side */}
-      <div className="w-1/2">
+      <div className="md:w-1/2">
       <form className="flex flex-col gap-5" action="" method="post">
         <div className="flex flex-col">
           <label className="" htmlFor="name">Name</label>

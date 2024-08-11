@@ -32,26 +32,26 @@ const Footer = () => {
   },
   ]
   return (
-    <div className="bg-primary text-white pt-16">
-      <div className="max-w-screen-xl mx-auto flex justify-between h-[624px]">
+    <div className="bg-primary text-white md:pt-16 pt-10">
+      <div className="px-5 lg:max-w-screen-xl md:max-w-screen-md md:px-8 sm:max-w-screen-sm mx-auto flex flex-col md:flex-row gap-5 h-[600px]">
         {/* left side */}
-        <div className="w-1/2">
+        <div className="md:w-1/2 flex flex-row gap-5 md:flex-col">
           <div className="">
-            <h1 className="font-bold text-lg">Subscribe to our newsletter</h1>
+            <h1 className="font-bold md:text-lg">Subscribe to our newsletter</h1>
            <div className="mb-4 mt-6">
-           <h1 className="text-lg">Email address</h1>
-           <input className="w-2/3 rounded-md px-4 py-3" type="email" name="email" id="email" placeholder="Your email address" />
+           <h1 className="md:text-lg">Email address</h1>
+           <input className="md:w-2/3 w-full rounded-md px-4 py-3" type="email" name="email" id="email" placeholder="Your email address" />
            </div>
-            <button className="bg-black w-32 text-white rounded-md px-4 py-3" type="submit">Submit</button>
+            <button className="bg-black md:w-32 text-white rounded-md px-4 py-3" type="submit">Submit</button>
           </div>
-          <div className="pt-14">
+          <div className="flex items-center md:pt-14">
             <img className="rounded-md" src='https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=232,h=179,fit=crop/AE0vXBDGR7i4rb9l/we-accept-payment-sign-design-template-7822ce17e41fdaed6d48ce0249677617_screen-d95g479xRlUkBl10.jpg' alt="" />
           </div>
         </div>
         {/* right side */}
-       <div className="w-1/2 text-lg">
-       <div className="flex w-full justify-between gap-10">
-          <div>
+       <div className="md:w-1/2 md:text-lg">
+       <div className="flex gap-10 mt-5">
+          <div className="w-1/2">
             <h1 className="font-bold text-lg pb-2">Important Links</h1>
             <div>
               {list.map((item, index) => (
@@ -59,7 +59,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div>
+          <div className="w-1/2">
             <h1 className="font-bold text-lg pb-2">Social</h1>
             <div className="flex gap-2 py-2">
               <a href="https://x.com/OctopusXinc"><FaXTwitter className="hover:text-black text-2xl" /></a>
