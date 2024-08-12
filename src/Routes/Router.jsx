@@ -8,6 +8,7 @@ import Career from './../Pages/Career/Career';
 import Contact from './../Pages/Contact/Contact';
 import Projects from './../Pages/Projects/Projects';
 
+
 const router = createBrowserRouter([
     {
         path: "/",
