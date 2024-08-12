@@ -2,7 +2,7 @@ import React from 'react'
 
 const OurFlagshipProject = () => {
   return (
-    <section className='container mx-auto max-w-[1200px] mt-10 mb-10 px-5 lg:px-0'>
+    <section className='container mx-auto max-w-[1200px] mt-10 mb-10 px-5 lg:px-5'>
       <h1 className='lg:text-5xl text-4xl text-black font-inter font-bold text-center'>Our Flagship <br className='flex lg:hidden'/> Project</h1>
       <div className='text-base font-inter font-normal space-y-8 mt-8 max-w-screen-lg mx-auto'>
       <p>The Creator Economy is moving fast, and we're ready to roll with every new change—whether it's AI, virtual reality, blockchain innovations, or anything else. But at the core, creators are still suffering from the same problems they've faced for years.</p>

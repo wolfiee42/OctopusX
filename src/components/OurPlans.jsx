@@ -2,7 +2,7 @@ import React from 'react'
 
 const OurPlans = () => {
   return (
-    <section className='container mx-auto max-w-[1200px] flex gap-x-6 md:flex-row flex-col gap-y-4  lg:px-0 md:px-5 mb-10 px-5'>
+    <section className='container mx-auto max-w-[1200px] flex gap-x-6 md:flex-row flex-col gap-y-4  lg:px-5 md:px-5 mb-10 px-5'>
       <div className='hover:shadow-2xl border shadow-slate-500 p-4 rounded-lg overflow-hidden cursor-pointer transition-all duration-300 group'>
         <div className='overflow-hidden'>
         <img className='lg:h-[357px] group-hover:scale-105 transition-all duration-300 group-hover:rounded-md'  src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxMXx8c3RhcnR1cHxlbnwwfHx8fDE3MDY3MTQ2NzR8MA&ixlib=rb-4.0.3&auto=format&fit=crop&w=1800&h=1080'/>
