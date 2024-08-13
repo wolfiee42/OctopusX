@@ -14,7 +14,7 @@ const Home = () => {
 
       <Helmet>
         <title>OctopusX</title>
-        <link rel="icon" type='image/jpeg' href="/icon.jpeg" />
+        <link rel="icon" type='image/jpeg' href="/iconX.jpeg" />
       </Helmet>
       <HomeBanner />
 
