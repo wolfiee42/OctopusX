@@ -6,7 +6,7 @@ export const contactSchema = z.object({
     .min(1, "Name is required")
     .regex(
       /^[a-zA-Z\s]+$/,
-      "Name should not contain numbers or special characters"
+      "Name is invalid."
     ),
   email: z.string().min(1, "Email is required").email("Invalid email address"),
   message: z
