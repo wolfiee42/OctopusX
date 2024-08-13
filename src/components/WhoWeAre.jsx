@@ -2,7 +2,7 @@ import React from 'react'
 
 const WhoWeAre = () => {
   return (
-    <section className='container mx-auto max-w-[1200px] mt-10 px-5 lg:px-0'>
+    <section className='container mx-auto max-w-[1200px] mt-10 px-5 lg:px-5'>
      <div className='lg:grid lg:grid-cols-5 gap-6 lg:grid-rows-2'>
      <div className='lg:col-span-2 lg:row-span-1'>
      <h1 className='lg:text-5xl text-4xl font-inter font-bold'>Who We Are</h1>
@@ -16,7 +16,7 @@ const WhoWeAre = () => {
      </div>
      <div></div>
      <div></div>
-     <div className="lg:w-[750px] lg:h-[425px] md:flex md:flex-col  lg:relative mt-6">
+     <div className="lg:w-[580px] xl:w-[750px] lg:h-[425px] md:flex md:flex-col  lg:relative mt-6">
     <div className=''>
      <img className='w-full h-[200px] md:h-[450px] object-cover lg:hidden' src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwzfHxzdGFydHVwfGVufDB8fHx8MTcwNjcxNDY3NHww&ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=848" alt="" />
     </div>
