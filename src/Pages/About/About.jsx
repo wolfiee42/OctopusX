@@ -2,7 +2,9 @@ export default function About() {
   return (
     <div className="w-full px-10 md:w-[max-w-5xl] lg:max-w-7xl mx-auto h-full py-10">
       <div>
-        <h1 className="mb-8 py-4 text-[48px] font-bold">Who We Are</h1>
+        <h1 className="mb:5 md:mb-8 py-4  font-bold text-[32px] md:text-40px] lg:text-[48px]">
+          Who We Are
+        </h1>
         <p className="mb-8 text-base">
           Welcome to OctopusX, A team build by Creators for Creators. Born from
           a simple yet profound desire to help creators, as well as by creating
