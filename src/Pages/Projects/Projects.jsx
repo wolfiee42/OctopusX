@@ -1,7 +1,9 @@
 export default function Projects() {
   return (
-    <div className="w-full px-10 md:px-10 lg:px-0 md:w-[max-w-5xl] lg:max-w-7xl mx-auto h-full py-10">
-      <h1 className="mb-5 py-4 text-[48px] font-bold">Projects</h1>
+    <div className="w-full  px-10 md:w-[max-w-5xl] lg:max-w-7xl mx-auto h-full py-10">
+      <h1 className="mb:5 md:mb-5 py-4  font-bold text-[32px] md:text-40px] lg:text-[48px]">
+        Projects
+      </h1>
       <div className="flex flex-col md:flex-row justify-between items-center gap-10 mx-auto">
         <div className="w-full md:w-[600px]">
           <h5 className="text-2xl font-bold">Featured Product</h5>
