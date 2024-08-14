@@ -43,22 +43,6 @@ export default function About() {
         </p>
       </div>
       <div>
-        <h1 className="mb-8 py-4 text-[48px] font-bold text-right">
-          What We Do
-        </h1>
-        <p className="mb-8 text-base">
-          This site, OctopusX, is a collection of our ideas and projects that
-          inspire us. We are a team of content creators and creative minds
-          dedicated to producing high-quality content, that what make us
-          independent and bootstrapped. Creating content and working with
-          creators allows us to develop digital products, tools, and resources
-          for fellow creators. We're proud of creating{" "}
-          <span className="underline font-bold">ytshops</span> and our
-          commitment to supporting creators and the global creator economy.
-          Explore all of our products <span className="underline">here</span>!
-        </p>
-      </div>
-      <div>
         <img
           className="my-28"
           src="https://i.ibb.co/gSNWmwn/office-Image.jpg"
