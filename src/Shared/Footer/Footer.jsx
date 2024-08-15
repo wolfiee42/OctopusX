@@ -1,6 +1,7 @@
 import { FaLinkedinIn } from "react-icons/fa";
 import {  FaXTwitter, FaYoutube } from "react-icons/fa6";
 
+
 const Footer = () => {
   const list = [{
     href: '/',
@@ -33,6 +34,7 @@ const Footer = () => {
   ]
   return (
     <div className="bg-primary text-white md:pt-16 pt-10">
+      
       <div className="px-5 lg:max-w-screen-xl md:max-w-screen-md md:px-8 sm:max-w-screen-sm mx-auto flex flex-col md:flex-row gap-5 h-[600px]">
         {/* left side */}
         <div className="md:w-1/2 flex flex-row gap-5 md:flex-col">
