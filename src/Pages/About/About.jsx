@@ -52,44 +52,10 @@ export default function About() {
         <div>
           <div className="lg:flex justify-center items-center ">
             <div>
-              <h1 className="text-4xl font-bold text-right md:text-5xl lg:text-5xl xl:text-5xl">What We Do</h1>
+              <h1 className="text-4xl font-bold text-right md:text-5xl lg:text-5xl xl:text-5xl pb-9">What We Do</h1>
               <p className="text-lg text-slate-900  xl:text-justify lg:text-justify">This site, OctopusX, is a collection of our ideas and projects that inspire us. We are a team of content creators and creative minds dedicated to producing high-quality content, that what make us independent and bootstrapped. Creating content and working with creators allows us to develop digital products, tools, and resources for fellow creators. We're proud of creating <span className="font-bold underline">ytshops</span> and our commitment to supporting creators and the global creator economy. Explore all of our products <span className="underline">here!</span>
               </p>
             </div>
-          </div>
-        </div>
-        <div>
-          <img
-            className="my-28"
-            src="https://i.ibb.co/gSNWmwn/office-Image.jpg"
-            alt=""
-          />
-        </div>
-        <div className="flex flex-col md:flex-row justify-between my-10 gap-8 md:gap-16">
-          <div className="w-full md:w-[600px] h-full">
-            <h1 className="mb-8 font-bold text-4xl">Why We're Here</h1>
-            <p className="mb-8 text-base font-normal text-black">
-              We're on a mission to fuel The Creator Economy by doing what we love
-              most: creating. Whether it's content that change others life,
-              digital products that solve real problems, or assets that creators
-              can use to improve their work, we're all in. And the best part?
-              We're always cooking up something new, driven by fresh ideas and the
-              endless possibilities of what we can create together.
-            </p>
-          </div>
-          <div className="w-full md:w-[600px] h-full">
-            <h1 className="mb-8 font-bold text-4xl">Our vision</h1>
-            <p className="mb-8 text-base font-normal text-black">
-              At OctopusX, we've got a vision that guides us every day: to make
-              the world a better place using content. We see a future where
-              creating isn't just for the few but for everyone with a story to
-              tell or an idea to share. Our dream is to break down the barriers
-              that hold creators back, making it super easy for everyone to share
-              their talents, reach people all over the world, and make a living
-              doing what they love. We're here to build a community where
-              creativity is limitless, and together, we can shape the future of
-              The Creator Economy. Let's make something awesome happen.
-            </p>
           </div>
         </div>
       </div>

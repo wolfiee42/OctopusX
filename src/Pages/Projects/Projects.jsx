@@ -5,7 +5,7 @@ export default function Projects() {
         className="flex justify-center items-center text-white bg-black">
         <div
           style={{ fontFamily: 'Inter, sans-serif' }}
-          className="font-bold pt-20 pb-40 px-5 max-w-[75rem]"
+          className="font-bold pt-20 pb-40 px-10  w-full md:w-[max-w-5xl] lg:max-w-7xl"
         >
           <h1 className="text-3xl mb-10 line-clamp-4">About Us</h1>
           <p className="text-lg lg:w-[60%] xl:w-[60%]">
