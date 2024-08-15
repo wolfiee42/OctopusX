@@ -1,6 +1,7 @@
 import CoreValues from "../CoreValues/CoreValues";
 
 
+
 export default function About() {
   return (
     <>
@@ -96,5 +97,6 @@ export default function About() {
         <CoreValues />
       </div>
     </>
-  );
+  )
+
 }
