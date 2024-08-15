@@ -1,8 +1,8 @@
 
 const CoreValues = () => {
     return (
-        <div style={{ fontFamily: 'Inter, sans-serif' }} className="flex justify-center items-center bg-primary text-white">
-            <div className="py-20 px-5 max-w-[75rem]">
+        <div style={{ fontFamily: 'Inter, sans-serif' }} className="w-full px-10 md:w-[max-w-5xl] lg:max-w-7xl mx-auto h-full py-20">
+            <div className="">
                 <p className="text-base">OUR STORY</p>
                 <div className="space-y-7">
                     <h1 className="text-4xl font-bold md:text-5xl lg:text-5xl xl:text-7xl">Core Values</h1>
