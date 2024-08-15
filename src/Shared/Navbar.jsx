@@ -92,10 +92,10 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div
         className={`md:hidden bg-white absolute top-0 left-0 w-full transition-transform duration-300 ease-in-out ${
-          menuOpen ? "translate-y-28" : "-translate-y-full"
+          menuOpen ? "translate-y-20" : "-translate-y-full"
         }`}
       >
-        <ul className="flex flex-col items-end p-4 gap-5 bg-white shadow-md">
+        <ul className="flex  items-end p-4 gap-5 bg-white shadow-md">
           <li>
             <NavLink
               to="/"
